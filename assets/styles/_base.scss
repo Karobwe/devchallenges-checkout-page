@@ -1,0 +1,20 @@
+@import "utils";
+
+body {
+  font-family: $font-default;
+  font-weight: 600;
+  color: $grey1;
+  background-color: $white;
+}
+
+.text--medium {
+  font-weight: 500;
+}
+
+.text--semi-bold {
+  font-weight: 600;
+}
+
+.text--bold {
+  font-weight: 700;
+}

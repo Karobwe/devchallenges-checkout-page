@@ -1,0 +1,19 @@
+$browser-context: 16;
+
+// See https://css-tricks.com/snippets/sass/px-to-em-functions/
+/**
+  Convert a pixel value to em
+  @pixels: tha value in pixel to convert, can have "px" unit appended or not
+  @context: value for which em value should be relative (e.g. browser's default font-size), can have "px" unit appended or not
+ */
+@function em($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}

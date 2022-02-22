@@ -5,39 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
     <link rel="icon" href="../assets/images/devchallenges.png" />
     <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
-    <title>Devchallenges</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./build/app.css">
+    <script src="./build/runtime.js"></script>
+    <script src="./build/app.js"></script>
+    <title>Checkout Page by Karobwe | Devchallenges</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
+    <div class="container">
+      <main>
+        <h1>Checkout</h1>
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
+        <section class="cart">
+          <div class="product-list">
+            <div class="product">
+              <h2 class="product__title">Vintage Backbag</h2>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+              <img src="./build/images/photo1.png" alt="" class="product__picture">
+
+              <div class="product__price">
+                <div class="discount__price">$54.99</div>
+                <div class="selling__price">$94.99</div>
+              </div>
+
+              <label class="product__quantity">
+                <button class="quantity__subtract">-</button>
+                <input type="text" class="quantity__value">
+                <button class="quantity__add">+</button>
+              </label>
+            </div>
+
+            <div class="product">
+              <h2 class="product__title">Levi Shoes</h2>
+
+              <img src="./build/images/photo2.png" alt="" class="product__picture">
+
+              <div class="product__price">
+                <div class="discount__price">$74.99</div>
+                <div class="selling__price">$124.99</div>
+              </div>
+
+              <label class="product__quantity">
+                <button class="quantity__subtract">-</button>
+                <input type="text" class="quantity__value">
+                <button class="quantity__add">+</button>
+              </label>
+            </div>
+          </div>
+
+          <table class="cart-summary">
+            <tr>
+              <th>Shipping</th>
+              <td>$19</td>
+            </tr>
+            <tr>
+              <th>Total</th>
+              <td>$148.98</td>
+            </tr>
+          </table>
+        </section>
+
+        <form action="#">
+          <section class="form__contact">
+            <h3>Contact information</h3>
+
+            <div class="input__group">
+              <div class="form-item__container">
+                <label for="email" class="form__label">E-mail</label>
+                <div class="form__field__wrapper">
+                  <span class="material-icons">email</span>
+                  <input type="email" id="email" class="form-item__input" placeholder="Enter your email...">
+                </div>
+              </div>
+
+              <div class="form-item__container">
+                <label for="phone" class="form__label">E-mail</label>
+                <div class="form__field__wrapper">
+                  <span class="material-icons">call</span>
+                  <input type="email" id="phone" class="form-item__input" placeholder="Enter your phone...">
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="form_shipping">
+            <h3>Shipping address</h3>
+
+            <div class="input__group">
+              <div class="form-item__container">
+                <label for="full-name" class="form__label">Full name</label>
+                <div class="form__field__wrapper">
+                  <span class="material-icons">account_circle</span>
+                  <input type="email" id="full-name" class="form-item__input" placeholder="Your full name...">
+                </div>
+              </div>
+
+              <div class="form-item__container">
+                <label for="address" class="form__label">Address</label>
+                <div class="form__field__wrapper">
+                  <span class="material-icons">home</span>
+                  <input type="email" id="address" class="form-item__input" placeholder="Your address..">
+                </div>
+              </div>
+
+              <div class="form-item__container">
+                <label for="city" class="form__label">City</label>
+                <div class="form__field__wrapper">
+                  <span class="material-icons">location_city</span>
+                  <input type="email" id="city" class="form-item__input" placeholder="Your city..">
+                </div>
+              </div>
+
+              <div class="form-item__container">
+                <label for="country" class="form__label">Country</label>
+                <div class="form__field__wrapper">
+                  <span class="material-icons">location_city</span>
+<!--                  <input type="email" id="country" class="form-item__input" placeholder="Your country..">-->
+                  <select name="country" id="country">
+                    <option value="" class="form-item__input" disabled selected hidden>Your country...</option>
+                    <option value="bel">Belgium</option>
+                    <option value="fra">France</option>
+                    <option value="deu">Germany</option>
+                    <option value="prt">Portugal</option>
+                    <option value="spe">Spain</option>
+                    <option value="che">Switzerland</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-item__container">
+                <label for="postal-code" class="form__label">Postal code</label>
+                <div class="form__field__wrapper">
+                  <span class="material-icons">markunread_mailbox</span>
+                  <input type="email" id="postal-code" class="form-item__input" placeholder="Your postal code..">
+                </div>
+              </div>
+
+              <div class="form-item__container">
+                <input type="checkbox" name="save" id="save">
+                <label for="save">Save this information for next time</label>
+              </div>
+            </div>
+          </section>
+        </form>
+      </main>
+
+      <footer>
+        <p class="text--semi-bold">created by <a href="https://github.com/Karobwe/devchallenges-checkout-page" class="text--bold">Karobwe</a> - <a href="https://devchallenges.io/">devChallenges.io</a></p>
+      </footer>
     </div>
   </body>
 </html>

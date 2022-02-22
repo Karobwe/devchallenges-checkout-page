@@ -1,0 +1,9 @@
+@import "utils";
+
+.container {
+  max-width: 90vw;
+
+  @include media-gte-lg {
+    max-width: em(900px);
+  }
+}

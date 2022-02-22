@@ -1,0 +1,10 @@
+@mixin media-gte-sm {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin media-gte-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
