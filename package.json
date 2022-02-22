@@ -1,0 +1,35 @@
+{
+  "name": "devchallenges-checkout-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "serve -p 8000 ./public",
+    "dev-server": "encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karobwe/devchallenges-checkout-page.git"
+  },
+  "keywords": [],
+  "author": "Chanfi Attoumani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Karobwe/devchallenges-checkout-page/issues"
+  },
+  "homepage": "https://github.com/Karobwe/devchallenges-checkout-page#readme",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^1.7.0",
+    "file-loader": "^6.0.0",
+    "sass": "^1.49.0",
+    "sass-loader": "12.0.0",
+    "serve": "^13.0.0",
+    "webpack-notifier": "1.6.0"
+  },
+  "dependencies": {
+    "core-js": "^3.21.0"
+  }
+}
