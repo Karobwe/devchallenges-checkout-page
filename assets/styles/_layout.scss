@@ -2,6 +2,10 @@
 
 .container {
   max-width: 90vw;
+  margin: em(32px) auto em(24px);
+  display: flex;
+  flex-direction: column;
+  row-gap: em(94px);
 
   @include media-gte-lg {
     max-width: em(900px);

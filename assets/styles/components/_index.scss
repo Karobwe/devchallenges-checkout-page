@@ -1,0 +1,17 @@
+@import "../utils";
+
+@import "cart";
+@import "form";
+@import "footer";
+
+main h1 {
+  font-size: em(24px);
+  line-height: em(29px);
+
+  color: $grey9;
+
+  @include media-gte-lg {
+    font-size: em(36px);
+    line-height: em(44px);
+  }
+}
