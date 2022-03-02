@@ -6,6 +6,10 @@ form {
   row-gap: em(45px);
   margin-top: em(40px);
 
+  @include media-gte-lg {
+    row-gap: em(60px);
+  }
+
   h3 {
     font-size: 14px;
     line-height: 17px;
@@ -26,6 +30,7 @@ form {
 
     @include media-gte-lg {
       margin: em(14px) auto;
+      row-gap: em(24px);
     }
 
     .form-item__container {
@@ -39,6 +44,7 @@ form {
         line-height: em(12px);
 
         @include media-gte-lg {
+          row-gap: em(16px);
           font-size: em(12px);
           line-height: em(15px);
         }

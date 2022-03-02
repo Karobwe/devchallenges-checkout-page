@@ -1,0 +1,21 @@
+@import "../utils";
+
+footer {
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+
+  @include media-gte-lg {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  a,
+  a:visited {
+    color: $grey8;
+  }
+
+  a:last-child {
+    text-decoration: none;
+  }
+}

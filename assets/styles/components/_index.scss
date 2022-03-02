@@ -4,14 +4,34 @@
 @import "form";
 @import "footer";
 
-main h1 {
-  font-size: em(24px);
-  line-height: em(29px);
+main {
+  h1 {
+    font-size: em(24px);
+    line-height: em(29px);
+    color: $grey9;
 
-  color: $grey9;
+    @include media-gte-lg {
+      flex-grow: 1;
+      flex-basis: 100%;
+      font-size: em(36px);
+      line-height: em(44px);
+    }
+  }
 
   @include media-gte-lg {
-    font-size: em(36px);
-    line-height: em(44px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: em(100px);
+
+    .cart {
+      order: 2;
+      height: fit-content;
+    }
+
+    form {
+      order: 1;
+      max-width: 45%;
+    }
   }
 }
