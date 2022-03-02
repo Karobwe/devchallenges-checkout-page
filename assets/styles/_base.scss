@@ -1,10 +1,19 @@
 @import "utils";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: $font-default;
   font-weight: 600;
   color: $grey1;
   background-color: $white;
+}
+
+a,
+a:visited {
+  color: $grey1;
 }
 
 .text--medium {

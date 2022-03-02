@@ -1,5 +1,127 @@
 @import '../utils';
 
 form {
+  display: flex;
+  flex-direction: column;
+  row-gap: em(45px);
   margin-top: em(40px);
+
+  h3 {
+    font-size: 14px;
+    line-height: 17px;
+
+    @include media-gte-lg {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  .input__group {
+    margin: em(11px) auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: em(16px);
+    justify-content: space-between;
+
+    @include media-gte-lg {
+      margin: em(14px) auto;
+    }
+
+    .form-item__container {
+      display: flex;
+      flex-direction: column;
+      row-gap: em(5px);
+      width: 100%;
+
+      .form__label {
+        font-size: em(10px);
+        line-height: em(12px);
+
+        @include media-gte-lg {
+          font-size: em(12px);
+          line-height: em(15px);
+        }
+      }
+
+      .form__field__wrapper {
+        display: flex;
+        column-gap: em(8px);
+        width: 100%;
+        padding: em(5px) em(12px);
+        border: solid 1px $grey3;
+        border-radius: em(12px);
+
+        .material-icons {
+          text-align: center;
+          color: $grey3;
+          border: none;
+        }
+
+        .form-item__input {
+          width: 100%;
+          padding: em(2px) em(3px);
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 15px;
+          outline: none;
+          border: none;
+          border-radius: em(24px);
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        #country {
+          color: $grey3;
+
+          &:focus {
+            border: none;
+          }
+
+          option:not(:checked) {
+            color: $grey1;
+          }
+        }
+      }
+    }
+  }
+
+  .form_shipping {
+    .form-item__container {
+      &:nth-last-child(4) {
+        flex-shrink: 1;
+        max-width: 47%;
+      }
+
+      &:nth-last-child(3) {
+        flex-shrink: 1;
+        max-width: 47%;
+      }
+
+      &:nth-last-child(2) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        column-gap: em(8px);
+      }
+
+      &:last-child {
+        display: flex;
+        align-items: flex-end;
+
+        input {
+          width: 45%;
+          padding: em(18px) em(45px);
+          font-size: 16px;
+          line-height: 20px;
+          color: $white;
+          background-color: $orange;
+          border:none;
+          border-radius: em(12px);
+        }
+      }
+    }
+  }
 }
