@@ -98,6 +98,10 @@ $ yarn watch
 - [Px to Em Functions](https://css-tricks.com/snippets/sass/px-to-em-functions/)
 - [Can I recover a branch after its deletion in Git?](https://stackoverflow.com/a/3640806/7058317)
 - [Create a Placeholder for the <select> Box with HTML5](https://www.w3docs.com/snippets/css/how-to-create-a-placeholder-for-an-html5-select-box-by-using-only-html-and-css.html)
+- [I Hate RegEx](https://ihateregex.io/)
+- [Check whether a string matches a regex in JS](https://stackoverflow.com/questions/6603015/check-whether-a-string-matches-a-regex-in-js)
+- [postal-codes.json](https://gist.github.com/jamesbar2/1c677c22df8f21e869cca7e439fc3f5b)
+- [Google Material Icons, Outlined, Rounded, Two-Tone, Sharp sets are not working](https://stackoverflow.com/questions/50271364/google-material-icons-outlined-rounded-two-tone-sharp-sets-are-not-working)
 
 ## Contact
 
