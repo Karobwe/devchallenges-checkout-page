@@ -1,0 +1,79 @@
+@import "../utils";
+
+.overlay {
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .7);
+
+  .alert {
+    position: relative;
+    min-width: 90vw;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: em(10px);
+    padding: em(10px);
+    background-color: $white;
+
+    @include media-gte-lg {
+      min-width: 50vw;
+    }
+
+    .alert__control__close {
+      z-index: 101;
+      order: 1;
+      align-self: flex-end;
+      padding: 0;
+      width: em(18px);
+      height: em(18px);
+      font-size: em(32px);
+      background-color: transparent;
+      border: solid 1px $grey8;
+    }
+
+    .alert__title {
+      order: 2;
+      font-size: em(36px);
+      text-align: center;
+
+      .material-icons-outlined {
+        font-size: em(48px);
+      }
+    }
+
+    .alert__content {
+      order: 3;
+      flex-grow: 1;
+      margin: em(30px) em(10px);
+      font-weight: 500;
+    }
+
+    .alert__controls {
+      order: 4;
+      display: flex;
+      justify-content: flex-end;
+
+      .alert__control__confirm {
+        min-width: 10%;
+        padding: em(18px) em(45px);
+        font-size: 16px;
+        line-height: 20px;
+        color: $white;
+        background-color: $orange;
+        border:none;
+        border-radius: em(12px);
+      }
+    }
+  }
+}
+
+.overlay.opened {
+  display: flex;
+}

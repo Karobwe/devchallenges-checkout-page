@@ -40,6 +40,7 @@ form {
       width: 100%;
 
       .form__label {
+        flex-grow: 1;
         font-size: em(10px);
         line-height: em(12px);
 
@@ -90,6 +91,10 @@ form {
             color: $grey1;
           }
         }
+      }
+
+      .form__field__wrapper.form__field__wrapper--error {
+        border-color: $red;
       }
     }
   }

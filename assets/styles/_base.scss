@@ -27,3 +27,27 @@ a:visited {
 .text--bold {
   font-weight: 700;
 }
+
+.text--success {
+  font-weight: 500;
+  font-size: em(10px);
+  line-height: em(12px);
+  color: $green;
+
+  @include media-gte-lg {
+    font-size: em(12px);
+    line-height: em(15px);
+  }
+}
+
+.text--error {
+  font-weight: 500;
+  font-size: em(10px);
+  line-height: em(12px);
+  color: $red;
+
+  @include media-gte-lg {
+    font-size: em(12px);
+    line-height: em(15px);
+  }
+}

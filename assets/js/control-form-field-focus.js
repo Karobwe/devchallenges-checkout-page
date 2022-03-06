@@ -22,6 +22,9 @@ export default function() {
 
 let highlightBorder = (field) => {
     field.style.border = 'solid 2px rgba(130, 130, 130, 1)';
+    if(field.classList.contains('form__field__wrapper--error')) {
+        field.style.borderColor = 'rgba(189,39,30,1)';
+    }
 }
 
 let resetBorder = (field) => {

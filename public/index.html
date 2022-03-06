@@ -7,11 +7,11 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./build/app.css">
     <script src="./build/runtime.js"></script>
-    <script src="./build/vendors-node_modules_core-js_modules_es_array_for-each_js-node_modules_core-js_modules_es_obj-14aa6b.js"></script>
     <script src="./build/app.js" defer></script>
     <title>Checkout Page by Karobwe | Devchallenges</title>
   </head>
@@ -91,10 +91,10 @@
               </div>
 
               <div class="form-item__container">
-                <label for="phone" class="form__label">E-mail</label>
+                <label for="phone" class="form__label">Phone</label>
                 <div class="form__field__wrapper">
                   <span class="material-icons">call</span>
-                  <input type="email" id="phone" class="form-item__input" placeholder="Enter your phone...">
+                  <input type="tel" id="phone" class="form-item__input" placeholder="Enter your phone..." pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$">
                 </div>
               </div>
             </div>
@@ -105,10 +105,10 @@
 
             <div class="input__group">
               <div class="form-item__container">
-                <label for="full-name" class="form__label">Full name</label>
+                <label for="fullName" class="form__label">Full name</label>
                 <div class="form__field__wrapper">
                   <span class="material-icons">account_circle</span>
-                  <input type="email" id="full-name" class="form-item__input" placeholder="Your full name...">
+                  <input type="text" id="fullName" class="form-item__input" placeholder="Your full name...">
                 </div>
               </div>
 
@@ -116,7 +116,7 @@
                 <label for="address" class="form__label">Address</label>
                 <div class="form__field__wrapper">
                   <span class="material-icons">home</span>
-                  <input type="email" id="address" class="form-item__input" placeholder="Your address..">
+                  <input type="text" id="address" class="form-item__input" placeholder="Your address..">
                 </div>
               </div>
 
@@ -124,7 +124,7 @@
                 <label for="city" class="form__label">City</label>
                 <div class="form__field__wrapper">
                   <span class="material-icons">location_city</span>
-                  <input type="email" id="city" class="form-item__input" placeholder="Your city..">
+                  <input type="text" id="city" class="form-item__input" placeholder="Your city..">
                 </div>
               </div>
 
@@ -132,7 +132,6 @@
                 <label for="country" class="form__label">Country</label>
                 <div class="form__field__wrapper">
                   <span class="material-icons">location_city</span>
-<!--                  <input type="email" id="country" class="form-item__input" placeholder="Your country..">-->
                   <select name="country" id="country" class="form-item__input">
                     <option value="" disabled selected hidden>Your country...</option>
                     <option value="bel">Belgium</option>
@@ -146,10 +145,10 @@
               </div>
 
               <div class="form-item__container">
-                <label for="postal-code" class="form__label">Postal code</label>
+                <label for="postalCode" class="form__label">Postal code</label>
                 <div class="form__field__wrapper">
                   <span class="material-icons">markunread_mailbox</span>
-                  <input type="email" id="postal-code" class="form-item__input" placeholder="Your postal code..">
+                  <input type="text" id="postalCode" class="form-item__input" placeholder="Your postal code.." pattern="^[0-9 +-]{5}">
                 </div>
               </div>
 
@@ -169,6 +168,17 @@
       <footer>
         <p class="text--semi-bold">created by <a href="https://github.com/Karobwe/devchallenges-checkout-page" class="text--bold">Karobwe</a> - <a href="https://devchallenges.io/">devChallenges.io</a></p>
       </footer>
+      <div class="overlay">
+        <div class="alert">
+          <h3 class="alert__title">Alert title</h3>
+          <p class="alert__content">Alert content</p>
+          <button class="alert__control__close material-icons">close</button>
+<!--          <span class="alert__control__close material-icons">close</span>-->
+          <div class="alert__controls">
+            <button class="alert__control__confirm">Confirm</button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

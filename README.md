@@ -1,18 +1,18 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Checkout page</h1>
 
 <div align="center">
-   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Checkout page by Karobwe | Devchallenges.io</a>.
 </div>
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://hopeful-austin-36237a.netlify.app">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/Karobwe/devchallenges-checkout-page.git">
       Solution
     </a>
     <span> | </span>
@@ -49,9 +49,8 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [Webpack Encore](https://symfony.com/doc/current/frontend.html)
+- [SASS](https://sass-lang.com/)
 
 ## Features
 
@@ -59,6 +58,12 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) was to build an application to complete the given user stories.
 
+- [x] User story: I can see a page following the given design
+- [x] User story: I can input email, phone, full name, address, city, country, and postal code
+- [x] User story: I can input the number of items
+- [x] User story: I can select at least 3 countries from the dropdown
+- [ ] User story: When I click submit button or press enter, I can see a warning if validation fails
+- [ ] User story: When I click submit button or press enter, I can see a successful alert if validation succeeds0
 
 ## How To Use
 
@@ -66,25 +71,36 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/karobwe/devchallenges-checkout-page
 
 # Install dependencies
-$ npm install
+$ yarn install
 
-# Run the app
-$ npm start
+# Run the app:
+
+# launch a local server
+$ yarn start
+
+# build assets (compile Js & CSS, copy images...)
+$ yarn build
+
+# optional, watch local changes
+$ yarn watch
 ```
 
 ## Acknowledgements
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [How To Create a Form with Icons](https://www.w3schools.com/howto/howto_css_form_icon.asp)
+- [Px to Em Functions](https://css-tricks.com/snippets/sass/px-to-em-functions/)
+- [Can I recover a branch after its deletion in Git?](https://stackoverflow.com/a/3640806/7058317)
+- [Create a Placeholder for the <select> Box with HTML5](https://www.w3docs.com/snippets/css/how-to-create-a-placeholder-for-an-html5-select-box-by-using-only-html-and-css.html)
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [karobwe.dev](https://karobwe.dev)
+- GitHub [@Karobwe](https://github.com/Karobwe)
+- Twitter [@Karobwe](https://twitter.com/Karobwe)
