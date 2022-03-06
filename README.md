@@ -62,8 +62,8 @@ This application/site was created as a submission to a [DevChallenges](https://d
 - [x] User story: I can input email, phone, full name, address, city, country, and postal code
 - [x] User story: I can input the number of items
 - [x] User story: I can select at least 3 countries from the dropdown
-- [ ] User story: When I click submit button or press enter, I can see a warning if validation fails
-- [ ] User story: When I click submit button or press enter, I can see a successful alert if validation succeeds0
+- [x] User story: When I click submit button or press enter, I can see a warning if validation fails
+- [x] User story: When I click submit button or press enter, I can see a successful alert if validation succeeds0
 
 ## How To Use
 
@@ -102,6 +102,10 @@ $ yarn watch
 - [Check whether a string matches a regex in JS](https://stackoverflow.com/questions/6603015/check-whether-a-string-matches-a-regex-in-js)
 - [postal-codes.json](https://gist.github.com/jamesbar2/1c677c22df8f21e869cca7e439fc3f5b)
 - [Google Material Icons, Outlined, Rounded, Two-Tone, Sharp sets are not working](https://stackoverflow.com/questions/50271364/google-material-icons-outlined-rounded-two-tone-sharp-sets-are-not-working)
+
+## Improvements
+
+- Support only postal code of the selected country
 
 ## Contact
 

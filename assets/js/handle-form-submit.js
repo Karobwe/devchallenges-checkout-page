@@ -190,9 +190,19 @@ let isValidPhone = function (phone) {
 let isValidPostalCode = function (postalCode) {
     if(isEmpty(postalCode)) return false;
 
-    let frenchPostalCodeFormat = /^[0-9]{5}$/;
+    let globalPostalCodeFormat = /^[0-9]{3,6}$/;
+    let unitedKingdomPostalCodeFormat = /^[A-Z]{1,2}[0-9R][0-9A-Z]?\s*[0-9][A-Z-[CIKMOV]]{2}/;
+    let unitedStatesPostalCodeFormat = /^\b\d{5}\b(?:[- ]\d{4})?$/;
+    let southKoreaPostalCodeFormat = /^\d{6}\s\(\d{3}-\d{3}\)$/
+    let saudiArabiaPostalCodeFormat = /^\d{5}(-\d{4})?$/;
+    let portugalPostalCodeFormat = /^\d{4}[- ]?\d{3}$/;
+    let japanPostalCodeFormat = /^\d{7}\s\(\d{3}-\d{4}\)$/;
+    let greecePostalCodeFormat = /^\d{3}\s?\d{2}$/;
 
-    return frenchPostalCodeFormat.test(postalCode);
+    return globalPostalCodeFormat.test(postalCode) || unitedKingdomPostalCodeFormat.test(postalCode)
+        || unitedStatesPostalCodeFormat.test(postalCode) || southKoreaPostalCodeFormat.test(postalCode)
+        || saudiArabiaPostalCodeFormat.test(postalCode) || portugalPostalCodeFormat.test(postalCode)
+        || japanPostalCodeFormat.test(postalCode) || greecePostalCodeFormat.test(postalCode);
 }
 
 /**
