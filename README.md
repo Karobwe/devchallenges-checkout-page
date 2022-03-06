@@ -106,6 +106,8 @@ $ yarn watch
 ## Improvements
 
 - Support only postal code of the selected country
+- Increase/decrease products prices according to selected quantities
+- Don't allow form submission if selected quantities for both product is 0 
 
 ## Contact
 
